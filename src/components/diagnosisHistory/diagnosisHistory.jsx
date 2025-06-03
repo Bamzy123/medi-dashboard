@@ -1,5 +1,8 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
+import repository from '../../assets/respiratory rate.png'
+import temperature from '../../assets/temperature.png'
+import heart from '../../assets/HeartBPM.png'
 import {Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Legend, Tooltip} from "chart.js";
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Legend, Tooltip);
@@ -11,7 +14,7 @@ const DiagnosisHistory = () => {
       {
         // Systolic
         label: "Systolic",
-        data: [120, 130, 160, 140, 150, 160],
+        data: [180, 120, 130, 160, 140, 150, 160],
         borderColor: "#d600af",
         backgroundColor: "#d600af",
         tension: 0.4,
@@ -63,8 +66,8 @@ const DiagnosisHistory = () => {
 
       <div className="vitals">
         <div className="vital-card blue">
-          <img src="/icons/lungs.png" alt="Respiratory" />
           <div>
+            <img src= { repository } alt="Respiratory" />
             <h4>Respiratory Rate</h4>
             <p className="value">20 bpm</p>
             <p className="status">Normal</p>
@@ -72,8 +75,8 @@ const DiagnosisHistory = () => {
         </div>
 
         <div className="vital-card orange">
-          <img src="/icons/temperature.png" alt="Temperature" />
           <div>
+            <img src= { temperature } alt="Temperature" />
             <h4>Temperature</h4>
             <p className="value">98.6°F</p>
             <p className="status">Normal</p>
@@ -81,8 +84,8 @@ const DiagnosisHistory = () => {
         </div>
 
         <div className="vital-card pink">
-          <img src="/icons/heart.png" alt="Heart Rate" />
           <div>
+            <img src= { heart } alt="Heart Rate" />
             <h4>Heart Rate</h4>
             <p className="value">78 bpm</p>
             <p className="status">Lower than Average</p>

@@ -4,11 +4,13 @@ import DiagnosisHistory from './components/diagnosisHistory/diagnosisHistory'
 
 function App() {
   return (
-    <>
+    <div className="app">
       <Header />
-      <Sidebar />
-      <DiagnosisHistory />
-    </>
+      <main className="main-content">
+        <Sidebar />
+        <DiagnosisHistory />
+      </main>
+    </div>
   )
 }
 
