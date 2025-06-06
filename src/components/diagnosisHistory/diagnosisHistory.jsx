@@ -52,7 +52,7 @@ const DiagnosisHistory = () => {
       <div className="blood-pressure-chart">
         <div className="chart-container">
           <h3>Diagnosis History</h3>
-          <div className="header">
+          <div className="headers">
             <span>Blood Pressure</span>
             <span className="range">Last 6 months</span>
           </div>
@@ -60,6 +60,7 @@ const DiagnosisHistory = () => {
         </div>
         <div className="legend">
           <div><span className="dot pink"></span> Systolic <strong>160</strong> <small>Higher than Average</small></div>
+          <hr />
           <div><span className="dot blue"></span> Diastolic <strong>78</strong> <small>Lower than Average</small></div>
         </div>
       </div>

@@ -1,10 +1,11 @@
-*{
-  border: solid black;
-}
+/* *{ */
+  /* border: solid black; */
+/* } */
 
 .diagnosis-history {
   padding: 20px;
   font-family: Arial, sans-serif;
+  border-radius: 12px;
   background-color: var(--unnamed-color-f6f6f6);
 }
 
@@ -32,7 +33,7 @@
   flex-direction: column;
 }
 
-.header {
+.headers {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -67,6 +68,8 @@
   gap: 12px;
   font-size: 13px;
   min-width: 180px;
+  margin-top: 60px;
+  justify-content: space-between;
 }
 
 .legend .dot {

@@ -1,0 +1,45 @@
+.diagnostic-container {
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.03);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .diagnostic-container h2 {
+    font-size: 20px;
+    color: #11203E;
+    margin-bottom: 20px;
+  }
+  
+  .diagnostic-table-wrapper {
+    overflow-x: auto;
+  }
+  
+  .diagnostic-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+  }
+  
+  .diagnostic-table th,
+  .diagnostic-table td {
+    text-align: left;
+    padding: 16px;
+    font-size: 14px;
+    color: #11203E;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .diagnostic-table th {
+    background-color: #f7fafd;
+    color: #11203E;
+    font-weight: 600;
+  }
+  
+  .diagnostic-table tr:last-child td {
+    border-bottom: none;
+  }
+  
